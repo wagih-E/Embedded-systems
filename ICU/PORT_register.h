@@ -2,23 +2,22 @@
 /************************************************************************/
 /***********************	author: Ahmed wagih	    *********************/
 /***********************	Layer:  MCAL	        *********************/
-/***********************	SWC:	DIO	            *********************/
+/***********************	SWC:	PORT	        *********************/
 /***********************	Version:1.00	        *********************/
 /************************************************************************/
 /************************************************************************/
 
-#ifndef CLCD_CONFIG_H_H
-#define CLCD_CONFIG_H_H
 
+#ifndef PORT_REGISTER_H_
+#define PORT_REGISTER_H_
 
-#define CLCD_DATA_PORT	DIO_u8PORTC
+//#define DDRA		*((volatile u8*)0x)
+#define DDRB		*((volatile u8*)0x24)
+#define DDRC		*((volatile u8*)0x27)
+#define DDRD		*((volatile u8*)0x2A)
 
-#define CLCD_CTRL_PORT  DIO_u8PORTB
-#define CLCD_RS_PIN 	DIO_u8PIN0
-#define CLCD_RW_PIN 	DIO_u8PIN1
-#define CLCD_E_PIN 		DIO_u8PIN3
-
-
-
+#define PORTB		*((volatile u8*)0x25)
+#define PORTC		*((volatile u8*)0x28)
+#define PORTD		*((volatile u8*)0x2B)
 
 #endif

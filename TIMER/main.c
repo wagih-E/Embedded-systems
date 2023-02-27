@@ -17,25 +17,25 @@ void LED(void);
 
 void main(void)
 {
-	u8 Local_u8Counter ;
+	u16 Local_u8Counter ;
 
 
 	PORT_VoidInit();
-	TIMER0_voidInit();
-	TIMER0_u8SetCallBack(&LED);
+	TIMER1_voidInit();
+	TIMER1_u8SetCallBack(&LED);
 	GIE_voidEnable();
+	TIMER1_voidSetICR(20000);
 
 	while(1){
-		for(Local_u8Counter =0 ; Local_u8Counter<255 ;Local_u8Counter++ ){
+/*for(Local_u8Counter =1000; Local_u8Counter<4000 ;Local_u8Counter++ ){
 
-			TIMER0_voidSetCompMatchValue(Local_u8Counter);
-			_delay_ms(10);
-		}
-	}
+			TIMER1_voidSetCompMatchValue(Local_u8Counter);
+			_delay_ms(5);
+		}*/
+	SERVO_voidAngle(90);
 
 
-
-}
+}}
 void LED(void){
 
 

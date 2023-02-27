@@ -2,23 +2,28 @@
 /************************************************************************/
 /***********************	author: Ahmed wagih	    *********************/
 /***********************	Layer:  MCAL	        *********************/
-/***********************	SWC:	DIO	            *********************/
+/***********************	SWC:	GIE            *********************/
 /***********************	Version:1.00	        *********************/
 /************************************************************************/
 /************************************************************************/
 
-#ifndef CLCD_CONFIG_H_H
-#define CLCD_CONFIG_H_H
 
 
-#define CLCD_DATA_PORT	DIO_u8PORTC
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
 
-#define CLCD_CTRL_PORT  DIO_u8PORTB
-#define CLCD_RS_PIN 	DIO_u8PIN0
-#define CLCD_RW_PIN 	DIO_u8PIN1
-#define CLCD_E_PIN 		DIO_u8PIN3
-
+#include "GIE_interface.h"
+#include "GIE_register.h"
 
 
+void GIE_voidEnable(void){
+SET_BIT(SREG,SREG_I);
 
-#endif
+
+}
+
+void GIE_voidDisble(void){
+
+CLR_BIT(SREG,SREG_I);
+
+}

@@ -86,7 +86,7 @@ void CLCD_voidInit(void){
 
 
 	// clear display
-CLCD_voidSendCommand(1);
+//CLCD_voidSendCommand(1);
 
 
 }
@@ -136,5 +136,32 @@ void CLCD_VoidWriteSpecialCha(u8* copy_pu8Pattern , u8 Copy_u8PatternNumber ,u8 
 	CLCD_voidSendData(Copy_u8PatternNumber);
 
 
+
+}
+void CLCD_voidSendInt(u8 Copy_u8Int){
+	u8 Local_u8Length = 3 ;
+	u8 Local_u8Div = 100 ;
+	while(Local_u8Length){
+		CLCD_voidSendData((Copy_u8Int/Local_u8Div)+48);
+
+		Copy_u8Int = Copy_u8Int % Local_u8Div ;
+		Local_u8Length--;
+		Local_u8Div /=10;
+
+
+	}}
+void CLCD_voidsendnumber(u32 copy_u32number){
+  u32 Local_832reversed=1;
+  while(copy_u32number!=0){
+    Local_832reversed=Local_832reversed*10+ copy_u32number%10;
+    copy_u32number/=10;
+  }
+  do
+  {
+    CLCD_voidSendData((Local_832reversed%10)+'0');
+    Local_832reversed/=10;
+
+  }
+  while(Local_832reversed!=1);
 
 }

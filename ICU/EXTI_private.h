@@ -2,21 +2,25 @@
 /************************************************************************/
 /***********************	author: Ahmed wagih	    *********************/
 /***********************	Layer:  MCAL	        *********************/
-/***********************	SWC:	DIO	            *********************/
+/***********************	SWC:	EXTI            *********************/
 /***********************	Version:1.00	        *********************/
 /************************************************************************/
 /************************************************************************/
+#ifndef EXTI_PRIVATE_H_
+#define EXTI_PRIVATE_H_
 
-#ifndef CLCD_CONFIG_H_H
-#define CLCD_CONFIG_H_H
+#define LOW_LEVEL		1
+#define ON_CHANGE  	    2
+#define FALLING_EDGE    3
+#define RISING_EDGE     4
 
 
-#define CLCD_DATA_PORT	DIO_u8PORTC
+#define ENABLED 		1
+#define DISABLED 		2
 
-#define CLCD_CTRL_PORT  DIO_u8PORTB
-#define CLCD_RS_PIN 	DIO_u8PIN0
-#define CLCD_RW_PIN 	DIO_u8PIN1
-#define CLCD_E_PIN 		DIO_u8PIN3
+
+
+
 
 
 

@@ -2,23 +2,29 @@
 /************************************************************************/
 /***********************	author: Ahmed wagih	    *********************/
 /***********************	Layer:  MCAL	        *********************/
-/***********************	SWC:	DIO	            *********************/
+/***********************	SWC:	PORT	        *********************/
 /***********************	Version:1.00	        *********************/
 /************************************************************************/
 /************************************************************************/
 
-#ifndef CLCD_CONFIG_H_H
-#define CLCD_CONFIG_H_H
+
+#include "STD_Types.h"
+#include "PORT_config.h"
+#include "PORT_private.h"
+#include "PORT_interface.h"
+#include "PORT_register.h"
 
 
-#define CLCD_DATA_PORT	DIO_u8PORTC
+void PORT_VoidInit(void){
 
-#define CLCD_CTRL_PORT  DIO_u8PORTB
-#define CLCD_RS_PIN 	DIO_u8PIN0
-#define CLCD_RW_PIN 	DIO_u8PIN1
-#define CLCD_E_PIN 		DIO_u8PIN3
-
+	DDRB = PORTB_DIR ;
+	DDRC = PORTC_DIR ;
+	DDRD = PORTD_DIR ;
 
 
+	PORTB = PORTB_INITIAL_VALUE ;
+	PORTC = PORTC_INITIAL_VALUE ;
+	PORTD = PORTD_INITIAL_VALUE ;
 
-#endif
+}
+

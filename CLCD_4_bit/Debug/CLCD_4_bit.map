@@ -144,7 +144,7 @@ LOAD d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- 
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x21d8
+.text           0x00000000     0x21de
  *(.vectors)
  .vectors       0x00000000       0x68 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
                 0x00000000                __vectors
@@ -263,48 +263,48 @@ LOAD d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- 
                 0x00000f56      0x40c ./CLCD_program.o
                 0x00000f56                CLCD_voidSendData
  .text.CLCD_voidInit
-                0x00001362      0x128 ./CLCD_program.o
+                0x00001362      0x12e ./CLCD_program.o
                 0x00001362                CLCD_voidInit
  .text.CLCD_VoidSendString
-                0x0000148a       0x52 ./CLCD_program.o
-                0x0000148a                CLCD_VoidSendString
+                0x00001490       0x52 ./CLCD_program.o
+                0x00001490                CLCD_VoidSendString
  .text.CLCD_VoidGoToXY
-                0x000014dc       0x3c ./CLCD_program.o
-                0x000014dc                CLCD_VoidGoToXY
+                0x000014e2       0x3c ./CLCD_program.o
+                0x000014e2                CLCD_VoidGoToXY
  .text.CLCD_VoidWriteSpecialCha
-                0x00001518       0x82 ./CLCD_program.o
-                0x00001518                CLCD_VoidWriteSpecialCha
+                0x0000151e       0x82 ./CLCD_program.o
+                0x0000151e                CLCD_VoidWriteSpecialCha
  .text.DIO_u8SetPinDirection
-                0x0000159a      0x1a2 ./DIO_program.o
-                0x0000159a                DIO_u8SetPinDirection
+                0x000015a0      0x1a2 ./DIO_program.o
+                0x000015a0                DIO_u8SetPinDirection
  .text.DIO_u8SetPortDirection
-                0x0000173c       0x6e ./DIO_program.o
-                0x0000173c                DIO_u8SetPortDirection
+                0x00001742       0x6e ./DIO_program.o
+                0x00001742                DIO_u8SetPortDirection
  .text.DIO_u8SetPinValue
-                0x000017aa      0x1a2 ./DIO_program.o
-                0x000017aa                DIO_u8SetPinValue
+                0x000017b0      0x1a2 ./DIO_program.o
+                0x000017b0                DIO_u8SetPinValue
  .text.DIO_u8SetPortValue
-                0x0000194c       0x6e ./DIO_program.o
-                0x0000194c                DIO_u8SetPortValue
+                0x00001952       0x6e ./DIO_program.o
+                0x00001952                DIO_u8SetPortValue
  .text.DIO_u8GetPinValue
-                0x000019ba       0xf0 ./DIO_program.o
-                0x000019ba                DIO_u8GetPinValue
+                0x000019c0       0xf0 ./DIO_program.o
+                0x000019c0                DIO_u8GetPinValue
  .text.PORT_VoidInit
-                0x00001aaa       0x36 ./PORT_program.o
-                0x00001aaa                PORT_VoidInit
- .text.main     0x00001ae0      0x686 ./main.o
-                0x00001ae0                main
- .text.libgcc   0x00002166        0x0 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00002166        0x0 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00002166       0x38 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x00002166                __prologue_saves__
- .text.libgcc   0x0000219e       0x36 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x0000219e                __epilogue_restores__
-                0x000021d4                . = ALIGN (0x2)
+                0x00001ab0       0x36 ./PORT_program.o
+                0x00001ab0                PORT_VoidInit
+ .text.main     0x00001ae6      0x686 ./main.o
+                0x00001ae6                main
+ .text.libgcc   0x0000216c        0x0 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000216c        0x0 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000216c       0x38 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x0000216c                __prologue_saves__
+ .text.libgcc   0x000021a4       0x36 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x000021a4                __epilogue_restores__
+                0x000021da                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000021d4        0x0 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x000021d4                exit
-                0x000021d4                _exit
+ .fini9         0x000021da        0x0 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000021da                exit
+                0x000021da                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -323,11 +323,11 @@ LOAD d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- 
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000021d4        0x4 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x000021da        0x4 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000021d8                _etext = .
+                0x000021de                _etext = .
 
-.data           0x00800100       0x28 load address 0x000021d8
+.data           0x00800100       0x28 load address 0x000021de
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x0 d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
@@ -393,8 +393,8 @@ LOAD d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- 
  *(.bss*)
  *(COMMON)
                 0x00800128                PROVIDE (__bss_end, .)
-                0x000021d8                __data_load_start = LOADADDR (.data)
-                0x00002200                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000021de                __data_load_start = LOADADDR (.data)
+                0x00002206                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800128        0x0
                 0x00800128                PROVIDE (__noinit_start, .)
@@ -419,14 +419,14 @@ LOAD d:/course embedded system/the programming/embedded/00-tools/03-imt sdk/03- 
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x1938
+.stab           0x00000000     0x1944
  *(.stab)
- .stab          0x00000000      0xce4 ./CLCD_program.o
- .stab          0x00000ce4      0x594 ./DIO_program.o
+ .stab          0x00000000      0xcf0 ./CLCD_program.o
+ .stab          0x00000cf0      0x594 ./DIO_program.o
                                 0x60c (size before relaxing)
- .stab          0x00001278      0x150 ./PORT_program.o
+ .stab          0x00001284      0x150 ./PORT_program.o
                                 0x1c8 (size before relaxing)
- .stab          0x000013c8      0x570 ./main.o
+ .stab          0x000013d4      0x570 ./main.o
                                 0x774 (size before relaxing)
 
 .stabstr        0x00000000      0xb8e

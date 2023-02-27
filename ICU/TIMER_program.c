@@ -36,12 +36,12 @@ void TIMER0_voidInit(){
 	 * */
 
 	/*set compare match value 64*/
-	  OCR0A = 64 ;
+	  OCR0A = 64;
 
 
 /*non inverting mode */
-	CLR_BIT(TCCR0A,4);
-	SET_BIT(TCCR0A,5);
+	CLR_BIT(TCCR0A,6);
+	SET_BIT(TCCR0A,7);
 
 	/*prescaler division by 8 */
 	CLR_BIT(TCCR0B,TCCR0B_CS00);
@@ -113,7 +113,7 @@ TCCR1B&= PRESCALER_MASK ;
 TCCR1B|= DEV_8;
 
 }
-u16  TIMER_u16ReadTimerValue(void){
+u16  TIMER1_u16ReadTimerValue(void){
 	return TCNT1 ;
 
 }

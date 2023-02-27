@@ -6,19 +6,20 @@
 /***********************	Version:1.00	        *********************/
 /************************************************************************/
 /************************************************************************/
+#ifndef CLDC_INTERFACE_H_
+#define CLDC_INTERFACE_H_
 
-#ifndef CLCD_CONFIG_H_H
-#define CLCD_CONFIG_H_H
+void CLCD_voidSendCommand(u8 Copy_u8Command);
 
+void CLCD_voidSendData(u8 Copy_u8Data);
 
-#define CLCD_DATA_PORT	DIO_u8PORTC
+void CLCD_voidInit(void);
 
-#define CLCD_CTRL_PORT  DIO_u8PORTB
-#define CLCD_RS_PIN 	DIO_u8PIN0
-#define CLCD_RW_PIN 	DIO_u8PIN1
-#define CLCD_E_PIN 		DIO_u8PIN3
+void CLCD_VoidSendString(const char* Copy_pcString);
 
+void CLCD_VoidGoToXY(u8 Copy_u8XPos, u8 Copy_u8YPos);
 
-
-
+void CLCD_VoidWriteSpecialCha(u8* copy_pu8Pattern , u8 Copy_u8PatternNumber ,u8 Copy_u8XPos ,u8 Copy_u8YPos);
+void CLCD_voidsendnumber(u32 copy_u32number);
+void CLCD_voidSendInt(u8 Copy_u8Int);
 #endif

@@ -2,23 +2,26 @@
 /************************************************************************/
 /***********************	author: Ahmed wagih	    *********************/
 /***********************	Layer:  MCAL	        *********************/
-/***********************	SWC:	DIO	            *********************/
+/***********************	SWC:	TIMER	        *********************/
 /***********************	Version:1.00	        *********************/
 /************************************************************************/
 /************************************************************************/
 
-#ifndef CLCD_CONFIG_H_H
-#define CLCD_CONFIG_H_H
 
+#ifndef TIMER_INTERFACE_H
+#define TIMER_INTERFACE_H
+void TIMER0_voidSetCompMatchValue(u8 Copy_u8Value);
+void TIMER0_voidInit();
 
-#define CLCD_DATA_PORT	DIO_u8PORTC
+void TIMER1_voidSetICR(u16 copy_u16TOP);
 
-#define CLCD_CTRL_PORT  DIO_u8PORTB
-#define CLCD_RS_PIN 	DIO_u8PIN0
-#define CLCD_RW_PIN 	DIO_u8PIN1
-#define CLCD_E_PIN 		DIO_u8PIN3
+void TIMER1_voidInit();
+void TIMER1_voidSetCompMatchValue(u16 Copy_u16Value);
+void SERVO_voidAngle(u8 Copy_u8Angle);
+void TIMER1_voidSetTimerValue(u16 Copy_u16Value);
+u16  TIMER1_u16ReadTimerValue(void);
 
-
+u8 TIMER0_u8SetCallBack(void (*Copy_pvCallBackFunc)(void));
 
 
 #endif
