@@ -14,7 +14,7 @@
 //choose 0 for input ,,, 1 for output //
 
 
-#define PORTB_PIN0_DIR 		1
+#define PORTB_PIN0_DIR 		0
 #define PORTB_PIN1_DIR 		1
 #define PORTB_PIN2_DIR		1
 #define PORTB_PIN3_DIR		1

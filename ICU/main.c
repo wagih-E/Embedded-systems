@@ -26,8 +26,9 @@ void main(void)
 	EXTI_voidInt1Init();
 	TIMER1_voidInit();
 	TIMER0_voidInit();
-	CLCD_voidInit();
 	GIE_voidEnable();
+	CLCD_voidInit();
+
 	//CLCD_VoidSendString("PeriodTicks= ");
 	while(1){
 
@@ -35,10 +36,10 @@ void main(void)
 		while(PeridTicks == 0 && ONTicks == 0 ) ;
 		CLCD_VoidGoToXY(0,0);
 		CLCD_VoidSendString("PeriodTicks=");
-		CLCD_voidSendInt(PeridTicks);
+		CLCD_voidsendnumber((u32)PeridTicks);
 		CLCD_VoidGoToXY(1,0);
 		CLCD_VoidSendString("ONTicks=");
-		CLCD_voidSendInt(ONTicks);
+		CLCD_voidsendnumber((u32)ONTicks);
 
 }
 }
